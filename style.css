@@ -1,0 +1,351 @@
+html { height: 100%; font-size: 100%; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1;}
+body { min-height: 100%; font-family: 'Lato', sans-serif; font-weight: 400;font-size:13px;}
+* { margin:0; padding:0; }
+#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/progress.gif) no-repeat center center;}	
+#supersized {  display:block; position:fixed;z-index:-999; height:100%; width:100%; }
+#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+#supersized li { display:block; list-style:none; z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; }
+#supersized a { width:100%; height:100%; display:block; }
+#supersized li.prevslide { z-index:-20; }
+#supersized li.activeslide { z-index:-10; }
+#supersized li.image-loading { background:#111 url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/progress.gif) no-repeat center center; width:100%; height:100%; }
+#supersized li.image-loading img{ visibility:hidden; }
+#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+
+
+
+nav.primary {
+	width:auto;
+	margin:30px auto;
+	display:table;
+}
+
+nav.primary ul li  {
+	float:left;
+	list-style:none;
+}
+
+nav.primary ul li a {
+	height:39px;
+	display:block;
+	font-size:15px;
+	color:#fff;
+	padding:0 10px;
+	text-decoration:none;
+	line-height:39px;
+}
+
+nav.primary li a.selected {
+    border-bottom: 3px solid #FF6C00;
+}
+
+.main {
+	padding:0;
+	margin:0;
+	display:block;
+}
+
+.entry {
+	position:relative;
+	float:left;
+	margin:10px;
+	cursor:pointer;
+	width:225px;
+	height:225px;
+	padding:0;
+}
+
+.portfolio { margin:0; }
+
+.magnifier {
+	background:rgba(255,100,0,.8) url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/magnifier.png) no-repeat center;
+	position:absolute;
+	top:10px;
+	left:10px;
+	bottom:10px;
+	right:10px;
+	opacity:0;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+
+.entry:hover .magnifier { opacity:1; }
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+-webkit-transition-duration: 0.8s;
+   -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+}
+
+.isotope {
+-webkit-transition-property: height, width;
+   -moz-transition-property: height, width;
+        transition-property: height, width;
+}
+
+.isotope .isotope-item {
+-webkit-transition-property: -webkit-transform, opacity;
+   -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+}
+
+
+
+.line {
+    border-top: 3px double #FFFFFF;
+    height: 1px;
+    margin: auto;
+	padding:20px;
+    max-width: 300px;
+}
+
+#wrapper { padding-top:145px; width: 100%;}
+.logo {width:850px; margin:0 auto 20px;}
+.logo img {margin:0 auto; display:table;}
+.overlay { clear: both;  min-height: 768px; background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/overlay.png) repeat scroll 0 0 transparent; position: relative; width: 100%; }
+
+.trial { 
+height: 170px; 
+margin: 0 auto;
+padding-top:15px; 
+position: relative; 
+width: 100%; 
+background: #000000;
+}
+	
+.bottomarrow { position: relative; background: #000000; z-index:9999; } 
+.bottomarrow:after { top: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none;overflow:hidden; z-index:1 } 
+.bottomarrow:after { border-color: rgba(255, 255, 255, 0); border-top-color: #000000; border-width: 20px; left: 50%; margin-left: -30px;overflow:hidden; z-index:1 }	
+.toparrow { position: relative; background: #000; } 
+.toparrow:after { bottom: 100%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.toparrow:after { border-color: rgba(221, 221, 221, 0); border-bottom-color: #000; border-width: 30px; left: 50%; margin-left: -30px; }
+.container { width: 980px; margin: 0 auto;}
+.home-message {width:50%;}
+.home-message  h1 { color: #ffffff; font-family: 'Lato',sans-serif; font-size: 31px; font-weight: 400; line-height: 41px; padding-top:20px; text-transform:uppercase; font-weight:bold; text-align: left; text-shadow: none;}
+#optin span,
+.home-message  p { line-height:20px;  position:relative; margin-top:10px; color:#666; padding:0 0 0 1px;}
+
+#footer-container { clear: both; background: #2c2c2c; box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);font-size: 15px; left: 0;margin: 0; overflow: hidden;padding: 0;position: absolute;width: 100%;z-index: 2;}
+#copyright-container { clear: both; font-size: 15px; background: rgba(0,0,0,0.1); box-shadow: 0px -2px 1px rgba(192, 192, 192, .99); overflow: hidden; }
+#copyright-container  { background: #000; box-shadow: 0 0 10px 10px rgba(0,0,0,0.1); min-height: 120px; }
+
+h2 { font-family: 'Lato', sans-serif; text-align: center; margin-bottom: 3em; color: #4c7687; text-shadow: 1px 1px 1px rgba(255,255,255,0.5);}
+
+.divider {padding:25px;}
+.copyright {padding:30px; color:#666; margin:30px 0 !important;width:980px; text-align:center;}
+.attribution { padding: 3em 0; text-align: center; color: #fff; text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+.attribution a { color: #fff;}
+
+/* ---- Countdown timer ---- */
+.Counter {
+    display: table;
+    margin: 20px auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 505px;
+}
+ul#countdown li {	
+	width:120px;
+	margin:20px 3px;
+	height:90px;
+	float:left;
+	padding:15px;
+	text-align:center; 
+	font-weight: 700; 
+	font-size: 18px;     
+	border: solid 1px #ff6c00;
+	background: rgb(247,247,247); 
+	/* Old browsers */
+	background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(216,216,216,1) 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(216,216,216,1) 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(216,216,216,1) 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, rgba(247,247,247,1) 0%,rgba(216,216,216,1) 100%); /* W3C */border-color: #D8D8D8 #CBCBCB #9D9D9D; color: #121212 !important;text-shadow: 0 1px 0 #F4F4F4;-webkit-box-shadow: 0 1px 1px #D1D1D1, inset 0 1px 0 #fff;-moz-box-shadow: 0 1px 1px #D1D1D1, inset 0 1px 0 #fff;box-shadow: 0px 1px 2px #D1D1D1, inset 0 1px 0 #fff;
+}
+
+
+ul#countdown li:hover {
+background: rgb(216,216,216); /* Old browsers */background: -moz-linear-gradient(top, rgba(216,216,216,1) 0%, rgba(247,247,247,1) 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(216,216,216,1)), color-stop(100%,rgba(247,247,247,1))); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, rgba(216,216,216,1) 0%,rgba(247,247,247,1) 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, rgba(216,216,216,1) 0%,rgba(247,247,247,1) 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, rgba(216,216,216,1) 0%,rgba(247,247,247,1) 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, rgba(216,216,216,1) 0%,rgba(247,247,247,1) 100%); /* W3C */border-color: #D8D8D8 #CBCBCB #B2B2B2; 
+}
+
+ul#countdown li span {
+	font-size:190%;font-weight:bold;text-align:center;
+}
+
+ul#countdown li p.timeRefDays, ul#countdown li p.timeRefHours, ul#countdown li p.timeRefMinutes, ul#countdown li p.timeRefSeconds {
+	text-align:center;font-size:65%; color:#666;text-transform:uppercase;
+}
+
+
+#optin { margin: 1em auto; overflow: hidden; text-align: center; float:right;}
+
+#optin input {	
+	width : 200px;
+	height : 40px;
+	margin : 15px 0 0 15px;
+	border : 0;
+	font-weight : 300;
+	font-size : 11px;
+	color : #666666;
+	text-align : left;
+	line-height : 14px;
+	padding-left : 20px;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	background: #2c2c2c;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12); -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12); -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+	transition: background-color 0.2s ease; -webkit-transition: background-color 0.2s ease; -moz-transition: background-color 0.2s ease; -o-transition: background-color 0.2s ease;
+}
+	
+#optin input[type="submit"] {
+    background: none repeat scroll 0 0 #FF6C00;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+	padding:0 20px !important;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 15px;
+    width: 95px;
+}
+
+#optin input:hover,
+#optin input[type="submit"]:hover {
+	color:#000;
+	background:#fff;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow:0px 0px 3px rgba(0,0,0,0.3); -webkit-box-shadow:0px 0px 3px rgba(0,0,0,0.3);
+}
+
+#optin span { background: url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/lock.png) no-repeat center left; float: left; margin-top:20px; padding-left: 20px }
+#optin span p {margin-top:0;}
+
+#content_wrap{ position:relative; z-index:4; width:980px; margin:auto; padding:0; margin-bottom:120px;}
+#products{ width:980px; height:auto; position:relative;		}
+h3{ font-size: 24px; font-weight: normal; margin-bottom:30px; color: #fff; line-height: 25px;}
+
+/* Social */
+#social {width: 100%;margin: 0 auto;overflow: hidden;z-index:1}     
+ul#socialicons {float: left;left: 50%;margin: 0 auto;position: relative;      }
+#socialicons li {display: inline;float: left;margin: 20px 0 5px;padding: 5px;position: relative;right: 50%;}
+a.google-plus,
+a.twitter,
+a.fb,
+a.youtube {display: block;height: 47px;width: 47px;outline: none;opacity: 0.8;}
+a.twitter { background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/social/twitter.png) no-repeat;}
+a.fb    {background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/social/facebook.png) no-repeat;}    
+a.youtube { background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/social/youtube.png) no-repeat;}
+a.google-plus { background:url(/web/20181222165404im_/http://driftaholics.com/wp/wp-content/themes/working/images/social/google-plus.png) no-repeat;}
+a:hover.google-plus,
+a:hover.twitter,
+a:hover.fb,
+a:hover.youtube {opacity: 1;}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+#wrap,
+.logo,
+.container{width: 748px !important }
+#products,
+#content_wrap{width: 735px !important }
+.copyright p {margin-right:20px;}
+.footer-menu {margin-left:20px;}
+#optin {width:45%; padding-right:10px;}
+.home-message {width:50%;padding-left:20px;}
+.home-message  h1 {font-size:20px;}
+.trial {height:270px;}
+#optin span,
+#optin input[type="submit"] {margin-left:70px;}
+}
+
+@media only screen and (max-width: 767px) { 
+#wrap,
+.logo,
+.container,
+.copyright,
+.Counter{width: 300px !important;}
+.logo img {width:100%;}
+.trial { width:100%; min-height: 500px;}
+#products,
+#content_wrap{width: 280px !important }
+.countdown_section {width:69px;}
+.countdown_amount{font-size:150%;}
+.countdown_day{font-size:50%;}
+
+.home-message {width:90%;padding-left:20px;}
+.home-message  h1 {font-size:20px;}
+ul#countdown li {width:140px; height:85px; margin-left:6px;}
+#optin span,
+#optin input[type="submit"] {float: none;}
+#optin {
+    float: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+#wrap,
+.logo,
+.container,
+#products,
+.Counter,
+.copyright,
+#content_wrap{width: 420px !important; }
+.logo img {width:90%;}
+.countdown_section {width:95px;}
+.copyright p {margin-top:20px;}
+.copyright p {float:left;width:90%; margin-left:20px;}
+#optin {width:90%; padding:10px;}
+.trial { width:100%; min-height: 400px;}
+.home-message {height: 500px;float:left;overflow: hidden;padding-left: 20px;position: relative;width: 90%;z-index: 1;}
+.home-message  h1 {font-size:20px;}
+ul#countdown li {width:95px; height:85px;}
+#optin span,
+#optin input[type="submit"] {float: none;}
+#optin {
+    float: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+}
+/*
+     FILE ARCHIVED ON 16:54:04 Dec 22, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:56:49 Sep 01, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 107.437
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.06
+  cdx.remote: 0.053
+  esindex: 0.01
+  LoadShardBlock: 80.186 (3)
+  PetaboxLoader3.datanode: 121.233 (5)
+  load_resource: 192.797 (2)
+  PetaboxLoader3.resolve: 51.388 (2)
+*/
